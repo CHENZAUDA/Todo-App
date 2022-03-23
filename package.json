@@ -1,5 +1,4 @@
 {
-  "homepage": "http://CHENZAUDA.github.io/https://github.com/CHENZAUDA/Todo-App",
   "name": "server",
   "version": "1.0.0",
   "description": "todo-app",
@@ -9,9 +8,8 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server/index.js",
     "server": "nodemon server/index.js",
-    "client": "cd client && npm run start",
-     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-
+    "client": "cd client && npm run start"
+ 
   },
   "author": "chen",
   "license": "ISC",

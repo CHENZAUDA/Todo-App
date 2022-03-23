@@ -10,8 +10,8 @@
     "start": "node server/index.js",
     "server": "nodemon server/index.js",
     "client": "cd client && npm run start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+
   },
   "author": "chen",
   "license": "ISC",
